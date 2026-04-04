@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Data Collection Form</title>
+</head>
+<body>
+  <h2>Student Data Collection Form</h2>
+  <form>
+    <h3>Personal Information</h3>
+    Full Name: <input type="text" name="fullname" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    Age: <input type="number" name="age" required><br><br>
+    Date of Birth: <input type="date" name="dob" required><br><br>
+    Upload Photo: <input type="file" name="photo" required><br><br>
+
+    <h3>Academic Information</h3>
+    Branch:
+    <select name="branch" required>
+      <option value="BCA">BCA</option>
+      <option value="BTech">B.Tech</option>
+    </select><br><br>
+
+    Skills:<br>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    <input type="checkbox" name="skills" value="Python"> Python<br><br>
+
+    Select Year:
+    <select name="year" required>
+      <option value="">--Select Year--</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select><br><br>
+
+    Portfolio URL: <input type="url" name="portfolio"><br><br>
+    Study Time: <input type="time" name="studytime"><br><br>
+    Preferred Week: <input type="week" name="week"><br><br>
+    Preferred Month: <input type="month" name="month"><br><br>
+    Date & Time of Admission: <input type="datetime-local" name="admission"><br><br>
+
+    <h3>Feedback Section</h3>
+    Rate Your HTML Knowledge (0-10): <input type="number" name="htmlrating" min="0" max="10"><br><br>
+    Write Your Feedback:<br>
+    <textarea name="feedback" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
